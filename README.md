@@ -1,1 +1,1 @@
-Workshop from: [Interneting is hard](https://internetingishard.com/html-and-css/responsive-images/)
+Workshop from: [Interneting is hard: ch.11](https://internetingishard.com/html-and-css/responsive-images/)
