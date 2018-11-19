@@ -11,11 +11,27 @@
     <div class='page'>
       <div class='section menu'></div>
       <div class='section header'>
+        <!-- Case: 'Art direction', i.e., auto switching photo. If we use this case,
+            it will lose an ability to optimal image size for retina screen, i.e.,
+            all screen types will be treated the same. -->
         <div class="photo">
-          <img src='images/photo-small.jpg'
+          <picture>
+            <source
+              media="(min-width: 401px)"
+              srcset="images/photo-big.jpg"
+            />
+            <source
+              media="(max-width: 400px)"
+              srcset="images/photo-tall.jpg"
+            />
+            <img src="images/photo-small.jpg"/>
+          </picture>
+          
+          <!-- Case: optimal image size for both retina and normal screen -->
+          <!-- <img src='images/photo-small.jpg'
             srcset="images/photo-small.jpg 1000w, images/photo-big.jpg 2000w"
             sizes="(min-width: 960px) 960px, 100vw"
-          />
+          /> -->
         </div>
       </div>
       <div class='section content'>

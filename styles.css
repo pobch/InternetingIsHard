@@ -24,6 +24,7 @@
 
 .header {
   background-color: #B2D6FF;
+  height: auto;
 }
 
 .content {
@@ -48,6 +49,11 @@
 }
 
 .illustration img {
+  display: block;
+  width: 100%;
+}
+
+.photo img {
   display: block;
   width: 100%;
 }
@@ -79,9 +85,6 @@
   .feature-2,
   .feature-3 {
     width: 33.3%;
-  }
-  .header {
-    height: 400px;
   }
   .sign-up {
     height: 200px;
